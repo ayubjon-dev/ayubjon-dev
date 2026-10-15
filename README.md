@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="./assets/header.svg" width="100%" alt="Ayubjon — Python developer"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="./assets/header-light.svg"/>
+  <img src="./assets/header-dark.svg" width="100%" alt="Ayubjon — Python developer"/>
+</picture>
 
 <br/>
 
@@ -12,7 +16,7 @@
 
 <br/><br/>
 
-<img src="./profile-3d-contrib/night-rainbow-transparent.svg" width="100%" alt="3D contribution graph"/>
+<img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution graph"/>
 
 <br/>
 
