@@ -1,14 +1,28 @@
 [
   {
     "type": "rainbow",
-    "fileName": "night-rainbow-transparent.svg",
+    "fileName": "rainbow-dark.svg",
     "backgroundColor": "transparent",
-    "foregroundColor": "#8b949e",
+    "foregroundColor": "#c9d1d9",
     "strongColor": "#f0c74a",
     "weakColor": "#8b949e",
     "radarColor": "#f0c74a",
     "saturation": "50%",
     "contribLightness": ["20%", "30%", "35%", "40%", "50%"],
+    "duration": "10s",
+    "hueRatio": -7,
+    "growingAnimation": true
+  },
+  {
+    "type": "rainbow",
+    "fileName": "rainbow-light.svg",
+    "backgroundColor": "transparent",
+    "foregroundColor": "#24292f",
+    "strongColor": "#b7791f",
+    "weakColor": "#57606a",
+    "radarColor": "#d4a017",
+    "saturation": "50%",
+    "contribLightness": ["85%", "65%", "55%", "45%", "35%"],
     "duration": "10s",
     "hueRatio": -7,
     "growingAnimation": true
