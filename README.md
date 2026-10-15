@@ -12,7 +12,7 @@
 
 <br/><br/>
 
-<img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution graph"/>
+<img src="./profile-3d-contrib/night-rainbow-transparent.svg" width="100%" alt="3D contribution graph"/>
 
 <br/>
 
