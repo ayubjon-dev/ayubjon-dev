@@ -2,8 +2,8 @@ name: GitHub-Profile-3D-Contrib
 
 on:
   schedule:
-    - cron: "17 0 * * *"
-  workflow_dispatch:
+    - cron: "17 0 * * *"   # every day
+  workflow_dispatch:        # run manually from the Actions tab
 
 permissions:
   contents: write
@@ -15,10 +15,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # standard set of images (unchanged)
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+
+      # custom image with a transparent background
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: conf/profile-3d.json
 
       - name: Commit & Push
         run: |
@@ -26,4 +34,5 @@ jobs:
           git config user.email github-actions@github.com
           git add -A .
           git diff --staged --quiet || git commit -m "update 3D contributions"
+          git pull --rebase
           git push
