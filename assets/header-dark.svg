@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.5" stop-color="#e0f2fe"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0;-1 0" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="orb1">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#38bdf8" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+    <!-- soft vignette: everything decorative fades out before the edges, so there is no visible box -->
+    <radialGradient id="fadeG" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.7" stop-color="#fff"/>
+      <stop offset="1" stop-color="#000"/>
+    </radialGradient>
+    <mask id="fade" maskUnits="userSpaceOnUse" x="0" y="0" width="1200" height="300">
+      <rect width="1200" height="300" fill="url(#fadeG)"/>
+    </mask>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feComponentTransfer in="b" result="bf"><feFuncA type="linear" slope="1.0"/></feComponentTransfer>
+      <feMerge><feMergeNode in="bf"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .code { font: 500 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #38bdf8; opacity: 0; }
+    .drift { animation: drift 14s linear infinite; }
+    @keyframes drift {
+      0% { opacity: 0; transform: translateY(16px); }
+      15% { opacity: 0.35; }
+      85% { opacity: 0.35; }
+      100% { opacity: 0; transform: translateY(-30px); }
+    }
+    .title { font: 800 92px -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; letter-spacing: 2px;
+             opacity: 0; animation: rise 1.2s cubic-bezier(.2,.8,.2,1) 0.2s forwards; }
+    .sub { font: 500 22px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #cbd5e1; letter-spacing: 1px;
+           opacity: 0; animation: rise 1s ease-out 0.9s forwards; }
+    .tag { font: 600 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #7dd3fc; letter-spacing: 3px;
+           opacity: 0; animation: rise 1s ease-out 1.4s forwards; }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    .scan { animation: scan 6s ease-in-out infinite; }
+    @keyframes scan { 0%,100% { transform: translateX(-260px); } 50% { transform: translateX(260px); } }
+    .grid { animation: gridmove 6s linear infinite; }
+    @keyframes gridmove { from { transform: translate(0,0); } to { transform: translate(40px,40px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; opacity: 1 !important; } }
+  </style>
+
+  <g mask="url(#fade)">
+    <rect class="grid" x="-40" y="-40" width="1280" height="380" fill="url(#grid)"/>
+    <circle cx="380" cy="130" r="200" fill="url(#orb1)">
+      <animate attributeName="cx" values="380;460;380" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="830" cy="170" r="210" fill="url(#orb2)">
+      <animate attributeName="cx" values="830;750;830" dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <text class="code drift" x="70" y="120" style="animation-delay:0s">await bot.send_message(...)</text>
+    <text class="code drift" x="90" y="205" style="animation-delay:5s">async def handle(message):</text>
+    <text class="code drift" x="880" y="95" style="animation-delay:2.5s">docker compose up -d</text>
+    <text class="code drift" x="905" y="160" style="animation-delay:8s">POST /webhook 200 OK</text>
+    <text class="code drift" x="870" y="232" style="animation-delay:11s">@router.message(F.text)</text>
+  </g>
+
+  <text class="tag" x="600" y="84" text-anchor="middle">&lt; PYTHON DEVELOPER /&gt;</text>
+  <text class="title" x="600" y="180" text-anchor="middle" fill="url(#name)" filter="url(#glow)">Ayubjon</text>
+  <text class="sub" x="600" y="226" text-anchor="middle">Backend · Automation · Telegram Bots</text>
+
+  <g class="scan">
+    <rect x="400" y="252" width="400" height="2" fill="url(#line)"/>
+  </g>
+</svg>
