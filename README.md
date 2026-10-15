@@ -16,10 +16,6 @@
 
 <br/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ayubjon-dev/ayubjon-dev/output/snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ayubjon-dev/ayubjon-dev/output/snake-light.svg"/>
-  <img src="https://raw.githubusercontent.com/ayubjon-dev/ayubjon-dev/output/snake-dark.svg" width="100%" alt="Contribution snake"/>
-</picture>
+<img src="./assets/pulse.svg" width="100%" alt="Contribution activity"/>
 
 </div>
