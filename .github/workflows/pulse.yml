@@ -1,0 +1,32 @@
+name: Generate pulse
+
+on:
+  schedule:
+    - cron: "23 */12 * * *"  # twice a day
+  workflow_dispatch:          # run manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build pulse.svg
+        run: python3 .github/scripts/pulse.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add assets/pulse.svg
+          git diff --staged --quiet && exit 0
+          git commit -m "update pulse"
+          git pull --rebase
+          git push
