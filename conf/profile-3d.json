@@ -1,0 +1,16 @@
+[
+  {
+    "type": "rainbow",
+    "fileName": "night-rainbow-transparent.svg",
+    "backgroundColor": "transparent",
+    "foregroundColor": "#8b949e",
+    "strongColor": "#f0c74a",
+    "weakColor": "#8b949e",
+    "radarColor": "#f0c74a",
+    "saturation": "50%",
+    "contribLightness": ["20%", "30%", "35%", "40%", "50%"],
+    "duration": "10s",
+    "hueRatio": -7,
+    "growingAnimation": true
+  }
+]
