@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="900" height="438" viewBox="0 0 900 438">
+  <defs>
+    <linearGradient id="win" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1520"/>
+      <stop offset="1" stop-color="#070b12"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#38bdf8" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .m { font: 16px ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; white-space: pre; }
+    .t { font: 500 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #64748b; }
+  </style>
+  <rect x="1" y="1" width="898" height="436" rx="14" fill="url(#win)" stroke="url(#edge)" stroke-width="1.5"/>
+  <path d="M1 15a14 14 0 0 1 14-14h870a14 14 0 0 1 14 14v25H1z" fill="#111b28"/>
+  <circle cx="26" cy="21" r="6" fill="#ff5f57"/>
+  <circle cx="46" cy="21" r="6" fill="#febc2e"/>
+  <circle cx="66" cy="21" r="6" fill="#28c840"/>
+  <text x="450.0" y="25" text-anchor="middle" class="t">ayubjon@server — zsh</text>
+
+  <clipPath id="c0"><rect x="32" y="58" height="28" width="0">
+    <set attributeName="width" to="172.8" begin="0.60s" fill="freeze"/>
+    <animate attributeName="width" begin="0.85s" dur="0.27s" calcMode="discrete" values="172.8;182.4;192.0;201.6;211.2;220.8;230.4" fill="freeze"/>
+  </rect></clipPath>
+  <text x="32" y="78" clip-path="url(#c0)" class="m"><tspan fill="#4ade80">ayubjon@server</tspan><tspan fill="#64748b">:</tspan><tspan fill="#38bdf8">~</tspan><tspan fill="#64748b">$ </tspan><tspan fill="#f8fafc">whoami</tspan></text>
+  <text x="32" y="108" class="m" fill="#e2e8f0" opacity="0"><set attributeName="opacity" to="1" begin="1.47s" fill="freeze"/>Ayubjon — Python developer</text>
+  <clipPath id="c2"><rect x="32" y="118" height="28" width="0">
+    <set attributeName="width" to="172.8" begin="1.65s" fill="freeze"/>
+    <animate attributeName="width" begin="1.90s" dur="0.63s" calcMode="discrete" values="172.8;182.4;192.0;201.6;211.2;220.8;230.4;240.0;249.6;259.2;268.8;278.4;288.0;297.6;307.2" fill="freeze"/>
+  </rect></clipPath>
+  <text x="32" y="138" clip-path="url(#c2)" class="m"><tspan fill="#4ade80">ayubjon@server</tspan><tspan fill="#64748b">:</tspan><tspan fill="#38bdf8">~</tspan><tspan fill="#64748b">$ </tspan><tspan fill="#f8fafc">cat skills.txt</tspan></text>
+  <text x="32" y="168" class="m" fill="#7dd3fc" opacity="0"><set attributeName="opacity" to="1" begin="2.88s" fill="freeze"/>▸ Telegram bots     payments · admin panels · analytics</text>
+  <text x="32" y="198" class="m" fill="#7dd3fc" opacity="0"><set attributeName="opacity" to="1" begin="3.06s" fill="freeze"/>▸ Backend services  REST APIs · background jobs · integrations</text>
+  <text x="32" y="228" class="m" fill="#7dd3fc" opacity="0"><set attributeName="opacity" to="1" begin="3.24s" fill="freeze"/>▸ Automation        n8n workflows · webhooks</text>
+  <text x="32" y="258" class="m" fill="#7dd3fc" opacity="0"><set attributeName="opacity" to="1" begin="3.42s" fill="freeze"/>▸ Infrastructure    Docker · Nginx · Linux · CI/CD</text>
+  <clipPath id="c7"><rect x="32" y="268" height="28" width="0">
+    <set attributeName="width" to="172.8" begin="3.60s" fill="freeze"/>
+    <animate attributeName="width" begin="3.85s" dur="0.36s" calcMode="discrete" values="172.8;182.4;192.0;201.6;211.2;220.8;230.4;240.0;249.6" fill="freeze"/>
+  </rect></clipPath>
+  <text x="32" y="288" clip-path="url(#c7)" class="m"><tspan fill="#4ade80">ayubjon@server</tspan><tspan fill="#64748b">:</tspan><tspan fill="#38bdf8">~</tspan><tspan fill="#64748b">$ </tspan><tspan fill="#f8fafc">ls ./now</tspan></text>
+  <text x="32" y="318" class="m" fill="#a78bfa" opacity="0"><set attributeName="opacity" to="1" begin="4.56s" fill="freeze"/>movie-finder-bot/   open-source-python-tool/</text>
+  <clipPath id="c9"><rect x="32" y="328" height="28" width="0">
+    <set attributeName="width" to="172.8" begin="4.74s" fill="freeze"/>
+    <animate attributeName="width" begin="4.99s" dur="0.27s" calcMode="discrete" values="172.8;182.4;192.0;201.6;211.2;220.8;230.4" fill="freeze"/>
+  </rect></clipPath>
+  <text x="32" y="348" clip-path="url(#c9)" class="m"><tspan fill="#4ade80">ayubjon@server</tspan><tspan fill="#64748b">:</tspan><tspan fill="#38bdf8">~</tspan><tspan fill="#64748b">$ </tspan><tspan fill="#f8fafc">status</tspan></text>
+  <text x="32" y="378" class="m" fill="#4ade80" opacity="0"><set attributeName="opacity" to="1" begin="5.61s" fill="freeze"/>● open to remote work · English · Russian</text>
+  <text x="32" y="408" class="m" opacity="0"><set attributeName="opacity" to="1" begin="5.99s" fill="freeze"/><tspan fill="#4ade80">ayubjon@server</tspan><tspan fill="#64748b">:</tspan><tspan fill="#38bdf8">~</tspan><tspan fill="#64748b">$ </tspan></text>
+  <rect x="204.8" y="392" width="10" height="20" fill="#38bdf8" opacity="0">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" begin="5.99s" repeatCount="indefinite"/>
+  </rect>
+</svg>
