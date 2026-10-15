@@ -16,7 +16,11 @@
 
 <br/><br/>
 
-<img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution graph"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/rainbow-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/rainbow-light.svg"/>
+  <img src="./profile-3d-contrib/rainbow-dark.svg" width="100%" alt="3D contribution graph"/>
+</picture>
 
 <br/>
 
