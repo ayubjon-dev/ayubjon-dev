@@ -104,7 +104,7 @@
     <rect class="beam" x="-16" y="56" width="40" height="134" fill="url(#beam)"/>
   </g>
 
-  <text x="24" y="218" class="m" fill="#7dd3fc">● 1253 contributions</text>
+  <text x="24" y="218" class="m" fill="#7dd3fc">● 1254 contributions</text>
   <text x="254" y="218" class="m" fill="#a78bfa">● 87 active days</text>
   <g transform="translate(814,206)">
     <text x="0" y="12" class="m" fill="#64748b">less</text>
