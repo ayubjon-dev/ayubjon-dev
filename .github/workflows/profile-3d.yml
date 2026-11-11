@@ -18,13 +18,13 @@ jobs:
       # standard set of images (unchanged)
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           USERNAME: ${{ github.repository_owner }}
 
       # custom image with a transparent background
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: conf/profile-3d.json
 
