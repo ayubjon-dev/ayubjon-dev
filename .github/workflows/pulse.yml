@@ -18,7 +18,7 @@ jobs:
       - name: Build pulse.svg
         run: python3 .github/scripts/pulse.py
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           USERNAME: ${{ github.repository_owner }}
 
       - name: Commit & Push
